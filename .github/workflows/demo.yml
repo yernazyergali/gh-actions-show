@@ -1,0 +1,8 @@
+name: Demo
+on: workflow_dispatch
+jobs: 
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print something
+        run: echo Salam World!
