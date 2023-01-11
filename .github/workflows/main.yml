@@ -7,7 +7,5 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Print something
-        run: echo Hello World!
-      - name: Print something else
-        run: echo ANother world!
+      - name: Print context info
+        run: echo ${{ toJSON(github.event) }}
