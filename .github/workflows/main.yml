@@ -6,7 +6,7 @@ on:
     types: [opened, edited, reopened]
 env:
   APP_ENV: production
-  APP_KEY: 123123
+  APP_KEY: ${{ secrets.APP_SECRET }}
 jobs:
   test:
     runs-on: ubuntu-latest
